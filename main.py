@@ -14,6 +14,8 @@ course.pritty_print_courses(courses)
 
 # needs_do = [79, 80, 247, 86, 276, 114, 115, 116, 117, 118, 119]
 needs_do = []
+# 先让needs_do为空, 运行一次, 看看有哪些章节, 然后输入需要做的章节id
+# 然后再运行一次, 就会自动做这些章节
 for do_id in needs_do:
     answers = course.get_exercises(access_token, do_id)
     course.pritty_print_exercises(answers)
